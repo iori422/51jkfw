@@ -1,0 +1,82 @@
+# -*- coding: utf-8 -*-
+import urllib
+import urllib2
+import cookielib
+import json
+import md5
+
+class login():
+ def HLogin_json(self):
+  filename='cookie.txt'
+  cookie = cookielib.MozillaCookieJar(filename)
+  opener = urllib2.build_opener(urllib2.HTTPCookieProcessor(cookie))
+  loginurl = 'https://demo.tijianzhuanjia.com/platform/login.html'
+  phoneno = "admin"
+  data = {'username':phoneno,
+         'password':'123456789',
+         'validationCode':'',
+         }
+  titleurl = 'https://demo.tijianzhuanjia.com/'
+  data = urllib.urlencode(data)#json
+  result1 = opener.open(loginurl,data)
+  cookie.save(ignore_discard=True, ignore_expires=True)
+  result2 = opener.open(titleurl)
+  self.a= result1.read()
+  self.b =result2.read()
+  print cookie
+
+
+ def webdelet(self):
+  filename ='cookie1.txt'  # 配置路径
+  cookie = cookielib.MozillaCookieJar(filename) #指定cookie
+  opener = urllib2.build_opener(urllib2.HTTPCookieProcessor(cookie))
+  webloginurl = 'https://demo.tijianzhuanjia.com/login.json'
+  phone = '13111111111'
+  data ={'username':phone,
+         'password':'111111',
+         'validationCode':'',
+         }
+  data2 ={'id':'b738b4fe-8cd8-4e44-9173-77a3a1b7ab05',
+          'validationCode':'1234'
+  }
+  titleurl = 'https://demo.tijianzhuanjia.com/'
+  data = urllib.urlencode(data)#json
+  result2 = opener.open(webloginurl,data)
+  result3 = opener.open(titleurl)
+  cookie.save(ignore_discard=True, ignore_expires=True)
+  t =self.b=result2.read()
+  w =self.c=result3.read()
+  print w
+  print t
+  print cookie
+  deleturl ='https://demo.tijianzhuanjia.com/order/order.json'
+  deletdata = {"id":'cd8bc5df-17ba-4729-99a2-da98d9acaafb',"'validationCode":'1234'}
+  jdata = json.dumps(deletdata)
+  requset = urllib2.Request(deleturl,jdata)
+  requset.add_header('Content-Type','application/json; charset=UTF-8')
+  requset.get_method = lambda:'DELETE'
+  requset = urllib2.urlopen(requset)
+  print  "requset is :"+ requset.read()
+
+login = login()
+login.webdelet()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

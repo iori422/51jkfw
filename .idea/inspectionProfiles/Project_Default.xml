@@ -1,0 +1,43 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyArgumentEqualDefaultInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
+    <inspection_tool class="PyClassicStyleClassInspection" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="PyCompatibilityInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ourVersions">
+        <value>
+          <list size="0" />
+        </value>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyMandatoryEncodingInspection" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="PyMissingOrEmptyDocstringInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="test.TestWeb.switchto" />
+          <option value="test.function.Information.driver" />
+          <option value="test.WeChat.TestWChatinPackage.driver" />
+          <option value="test.function.Login.driver" />
+          <option value="test.function.ClassInElement.*" />
+          <option value="test.function.object.driver" />
+          <option value="test.function.Object.*" />
+          <option value="test.WEB.TestWebInCustom.driver" />
+          <option value="test.WEB.TextWebInCheck.driver" />
+          <option value="test.test1.driver" />
+          <option value="test.WEB.WEBfunction.webObjct.random" />
+          <option value="win32api" />
+          <option value="test.APItest.Login_json.weblogin" />
+          <option value="test.APItest.Login_json.cookie" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="RestRoleInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredRoles">
+        <value>
+          <list size="0" />
+        </value>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>

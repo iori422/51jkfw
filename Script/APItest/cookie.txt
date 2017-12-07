@@ -1,0 +1,6 @@
+# Netscape HTTP Cookie File
+# http://curl.haxx.se/rfc/cookie_spec.html
+# This is a generated file!  Do not edit.
+
+demo.tijianzhuanjia.com	FALSE	/	FALSE		SERVERID	766f4f671e2774d4708e0f0722db06ff|1472441114|1472441114
+demo.tijianzhuanjia.com	FALSE	/	FALSE		hmopPlatform	78923263-ce79-4db1-9035-b16b40234a57
